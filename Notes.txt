@@ -1,0 +1,175 @@
+Javascript framework such as angular
+LightWeight framework and size 18-21 KB
+Yes this is front end framework and used for single page application
+High run time performance
+initial released in FEB,2014
+Open source and used with NPM (can also be used without NPM) 
+Vue js CLI is used for development,build and serve etc
+CLI can not use with CND and package manager
+latest version
+babel is used to convert file.
+
+
+install vue js
+    install vue CLI : npm install -g @vue/cli
+    Check installed or not 
+    make project with cli
+    run project:npm run serve
+
+Start with code and make a component
+    install vetur extenstion for vue code readability
+    What is component
+    Make a home component
+    Define props and export component
+    Import and use component
+
+Conditional rendering
+    Define data function
+    use if directive
+    make button and apply conditional with button click
+    how to use else if
+
+Vue.js data:
+    Defined as a function that returns an object.
+    Each property of the returned object is a reactive state variable.
+    Vue.js automatically makes these properties reactive, meaning the view will re-render when these properties change.
+    You can directly modify the properties of the data object.
+    Vue's data properties are directly mutable, whereas React’s state variables are updated through a setter function returned by useState.The way they are declared and used is different, as shown in the examples above.data in Vue is an option in the component’s configuration object, whereas useState is a hook used inside a functional component in React.
+
+for loop
+    Make data function
+    Define array of objects
+    Make a table
+    use v-for directive loop
+
+
+Template in vue js
+    what is Template
+    Display normal property
+    Make button click
+    constant tag value
+    operators
+    add html as property
+    Disable button
+
+Class and style bindings
+    how to use the class
+    how to use the style
+    class with object
+    class with array
+    class with condition
+    style with property    
+
+Data Binding in vue js
+    what is data binidng
+    make a component
+    Define property
+    make data Binding
+    data binidng with multi-line
+    The v-model directive in Vue.js creates a two-way binding on an input, textarea, or select element. It automatically binds the value of the input element to a variable in your Vue instance’s data. This means that:
+
+Props in Vue js
+    what is props
+    make a component
+    define props
+    pass props
+    access props
+
+Send props child to parent
+    Make a child parent
+    Call a function on button click
+    emit a event from function
+    call parent component function with event emitter
+    update title
+
+LifeCycle methods
+
+
+How to make form in vue js
+    Make a component and import in app.vue file
+    Make input fields
+    Add checkbox and radio button
+    Define property for form
+    Bind input field with property
+    Submit form
+
+How to make form in vue js
+    Make 2 input field
+    Define property for form
+    Bind input field with property
+    Submit form
+
+What is filter in vue js
+    Make a filter
+    Use a filter
+    
+    
+    
+Befor mount - it is called when you html is about to render
+mounted - it is called when you html is rendered 
+Before destroy - it is called 
+
+
+Fetch get api
+    install axios and vue-axios
+    make component
+    use mounted life cycle hooks for call api
+    fetch api with axios
+    use v-for for show list of data
+
+Rounting in vuejs
+    install vue package
+    import component
+    make routers
+    register router
+    test    
+
+Add rounting link 
+    where we should define router link
+    define link for current routing
+    make 1 more router
+    pass data with routing in vue.js
+    add some fake user list in home
+    define route with params
+    open new route on click
+    get data from route
+
+404 page
+    Make A 404 component
+    import in main.js file
+    Make router for 404
+    Test
+
+Dynamic component
+    Make 2 component
+    signin and signup
+    import in app.vue
+    use component tag for show component
+    Change component with button click    
+
+Custom directives in vue.js
+    what is Custom directives
+    it is used to manipulate the html
+    how to make it
+    how to add values with Custom directives
+    example
+    and test  
+
+Non props Data
+    Make a child component
+    pass non-props data
+    difference between props and non-props data
+
+Computed property
+    What is Computed property
+    difference between Template expression and Computed property
+    In-template expressions are very convenient, but they are meant for simple operations. Putting too much logic in your templates can make them bloated and hard to maintain.
+    for complex logic that includes reactive data, it is recommended to use a computed property.
+    example of computed property
+    computed properties are cached based on their reactive dependencies
+
+Watchers
+    what is watchers
+    How to use Watchers?
+    Example
+    watcher is like useEffect in react          
