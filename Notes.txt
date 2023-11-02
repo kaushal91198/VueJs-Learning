@@ -173,3 +173,38 @@ Watchers
     How to use Watchers?
     Example
     watcher is like useEffect in react          
+
+Slots
+    What are slots?
+    how to use slots?
+    Example    
+
+Dynamic component
+    what is a Dynamic component
+    why we should not use "if-else" condition
+    Load Dynamic component in proper way
+
+Teleport component
+    What is Teleport component
+    example of teleport component
+    use of teleport component
+
+Before created and created
+    When they called
+    Before created - The beforeCreate lifecycle hook in Vue.js is called right after the instance has been initialized, but before any reactive data has been set up or any other lifecycle hooks have been called
+    Created - The created lifecycle hook in Vue.js is called after the instance has been initialized, reactive data has been set up, and events have been configured. This hook provides a good opportunity to run code after the reactive properties have been initialized but before the component is mounted to the DOM.
+    Example
+
+Before update and updated
+    When they called
+    Before update - The beforeUpdate lifecycle hook in Vue.js is called when the data on your component changes and the update cycle begins, right before the DOM is patched and re-rendered.
+    updated - The created lifecycle hook in Vue.js is called after the instance has been initialized, reactive data has been set up, and events have been configured. This hook provides a good opportunity to run code after the reactive properties have been initialized but before the component is mounted to the DOM.
+    Example
+
+Routing
+    why we use routing
+    package installation
+    make routing file
+    define routes
+    make link for routes
+        

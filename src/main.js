@@ -11,6 +11,11 @@ import CustomDirectives from "./components/CustomDirectives.vue";
 import NonProps from "./components/NonProps.vue";
 import ComputedProperty from "./components/ComputedProperty.vue";
 import Watchers from "./components/Watchers.vue";
+import Slot from "./components/Slots.vue";
+import MainDynamic from "./components/Dynamic/main.vue";
+import BeforeCreatedAndCreated from "./components/BeforeCreatedAndCreated.vue";
+import BeforeMountedAndMounted from "./components/BeforeMountedAndMounted.vue";
+
 
 Vue.use(VueRouter);
 const routes = [
@@ -49,6 +54,22 @@ const routes = [
   {
     path: "/watchers",
     component: Watchers,
+  },
+  {
+    path: "/slot",
+    component: Slot,
+  },
+  {
+    path: "/dynamic-main",
+    component: MainDynamic,
+  },
+  {
+    path: "/before-created-and-created",
+    component: BeforeCreatedAndCreated,
+  },
+  {
+    path: "/before-mounted-and-mounted",
+    component: BeforeMountedAndMounted,
   },
   {
     path: "*",

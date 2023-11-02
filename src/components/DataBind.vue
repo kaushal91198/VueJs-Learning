@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>{{ message }}</h1>
-        <input type="text" v-model="message"/>
-        <textarea type="text" v-model="message"/>
+        <input type="text" v-model="message" />
+        <textarea type="text" v-model="message" />
     </div>
 </template>
 

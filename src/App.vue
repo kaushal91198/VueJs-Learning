@@ -31,10 +31,24 @@
         <li>
           <router-link to="/watchers">Watchers</router-link>
         </li>
+        <li>
+          <router-link to="/slot">Slots</router-link>
+        </li>
+        <li>
+          <router-link to="/dynamic-main">Dynamic Main</router-link>
+        </li>
+        <li>
+          <router-link to="/before-created-and-created">Before Created And Created</router-link>
+        </li>
+        <li>
+          <router-link to="/before-mounted-and-mounted">Before Mounted And Mounted</router-link>
+        </li>
       </ul>
     </nav>
-
     <router-view></router-view>
+    <teleport to="'#footer'">
+      <Footer></Footer>
+    </teleport>
   </div>
 </template>
 
@@ -43,12 +57,12 @@
 // import Home from './components/Home.vue'
 // import Form from './components/Form/index.vue'
 // import EmployeeList from './components/Api/apiEmployeeList.vue'
-
-
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
+    Footer
     // HelloWorld,
     // Home
     // Form
