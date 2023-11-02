@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import VueRouter from "vue-router";
+import vueKanban from "vue-kanban";
 import Home from "./components/Home.vue";
 import Form from "./components/Form/index.vue";
 import Api from "./components/Api/apiEmployeeList.vue";
@@ -15,9 +16,11 @@ import Slot from "./components/Slots.vue";
 import MainDynamic from "./components/Dynamic/main.vue";
 import BeforeCreatedAndCreated from "./components/BeforeCreatedAndCreated.vue";
 import BeforeMountedAndMounted from "./components/BeforeMountedAndMounted.vue";
-
+import Kanban from "./components/VueKanban.vue";
+import VueDraggable from "./components/VueDraggable.vue";
 
 Vue.use(VueRouter);
+Vue.use(vueKanban);
 const routes = [
   {
     path: "/",
@@ -66,10 +69,18 @@ const routes = [
   {
     path: "/before-created-and-created",
     component: BeforeCreatedAndCreated,
-  },
+  },  
   {
     path: "/before-mounted-and-mounted",
     component: BeforeMountedAndMounted,
+  },
+  {
+    path: "/kanban-board",
+    component: Kanban,
+  },
+  {
+    path: "/vue-draggable",
+    component: VueDraggable,
   },
   {
     path: "*",

@@ -10,9 +10,12 @@
   "dependencies": {
     "axios": "^1.6.0",
     "core-js": "^3.6.4",
+    "lodash": "^4.17.21",
     "vue": "^2.6.11",
     "vue-axios": "^3.5.2",
-    "vue-router": "^3.3.2"
+    "vue-kanban": "^1.8.0",
+    "vue-router": "^3.3.2",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.1",

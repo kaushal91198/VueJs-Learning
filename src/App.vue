@@ -43,6 +43,12 @@
         <li>
           <router-link to="/before-mounted-and-mounted">Before Mounted And Mounted</router-link>
         </li>
+        <li>
+          <router-link to="/kanban-board">Kanban board</router-link>
+        </li>
+        <li>
+          <router-link to="/vue-draggable">Draggable</router-link>
+        </li>
       </ul>
     </nav>
     <router-view></router-view>
