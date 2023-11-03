@@ -49,6 +49,9 @@
         <li>
           <router-link to="/vue-draggable">Draggable</router-link>
         </li>
+        <li>
+          <router-link to="/vuex">VueX</router-link>
+        </li>
       </ul>
     </nav>
     <router-view></router-view>

@@ -33,7 +33,7 @@ export default {
     },
     methods: {
         checkMove(asdas) {
-            console.log(asdas,"SDfnj")
+            console.log(asdas, "SDfnj")
         }
     }
 

@@ -15,7 +15,8 @@
     "vue-axios": "^3.5.2",
     "vue-kanban": "^1.8.0",
     "vue-router": "^3.3.2",
-    "vuedraggable": "^2.24.3"
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.1",

@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import VueRouter from "vue-router";
 import vueKanban from "vue-kanban";
+import Vuex from "vuex";
 import Home from "./components/Home.vue";
 import Form from "./components/Form/index.vue";
 import Api from "./components/Api/apiEmployeeList.vue";
@@ -18,6 +19,7 @@ import BeforeCreatedAndCreated from "./components/BeforeCreatedAndCreated.vue";
 import BeforeMountedAndMounted from "./components/BeforeMountedAndMounted.vue";
 import Kanban from "./components/VueKanban.vue";
 import VueDraggable from "./components/VueDraggable.vue";
+import VueXComponent from "./components/VueXComponent.vue";
 
 Vue.use(VueRouter);
 Vue.use(vueKanban);
@@ -69,7 +71,7 @@ const routes = [
   {
     path: "/before-created-and-created",
     component: BeforeCreatedAndCreated,
-  },  
+  },
   {
     path: "/before-mounted-and-mounted",
     component: BeforeMountedAndMounted,
@@ -83,11 +85,16 @@ const routes = [
     component: VueDraggable,
   },
   {
+    path: "/vuex",
+    component: VueXComponent,
+  },
+  {
     path: "*",
     component: Notfound,
   },
 ];
 const router = new VueRouter({ routes });
+
 Vue.directive("size", {
   bind(el, binding) {
     if (binding.value === "small") {
@@ -104,7 +111,54 @@ Vue.config.productionTip = false;
 Vue.filter("Ucase", function (val) {
   return val.toUpperCase();
 });
+Vue.use(Vuex);
+const store = new Vuex.Store({
+  state: {
+    count: 0,
+  },
+
+  getters: {
+    getCountWithName: (state) => (name) => {
+      return state.count + name;
+    },
+    getCount(state) {
+      return state.count;
+    },
+  },
+  mutations: {
+    increment(state) {
+      state.count++;
+    },
+    decrement(state, action) {
+      state.count -= action;
+    },
+  },
+  actions: {
+    increment(context) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          context.commit("increment", 5);
+          resolve();
+        }, 1000);
+      });
+    },
+    decrement(context, payload) {
+      context.commit("decrement", payload.value);
+    },
+    anotherIncrementMethod(context) {
+      context.dispatch("increment").then((res) => {
+        console.log(res);
+      });
+    },
+  },
+});
+
+// router.beforeEach(()=>{
+//   console.log(store.state.count,'this.$store')
+// })
+
 new Vue({
   router: router,
   render: (h) => h(App),
+  store: store,
 }).$mount("#app");
